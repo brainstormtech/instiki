@@ -72,3 +72,101 @@ Page 'HomePage' not found
 Rendering template within layouts/default
 Rendering wiki/new
 Completed in 165ms (View: 161, DB: 1) | 200 OK [http://localhost/wiki/new/HomePage]
+** Erubis 2.7.0
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-11 00:48:17) [GET]
+Redirected to http://localhost:2500/wiki/show/HomePage
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2012-07-11 00:48:18) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Cached fragment hit: views/wiki/show/HomePage (0.2ms)
+Redirected to http://localhost:2500/wiki/new/HomePage
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/wiki/show/HomePage]
+
+
+Processing WikiController#new (for 127.0.0.1 at 2012-07-11 00:48:18) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Checking DNSBL 1.0.0.127.bl.spamcop.net
+Checking DNSBL 1.0.0.127.sbl-xbl.spamhaus.org
+127.0.0.1 added to DNSBL passed cache
+Rendering template within layouts/default
+Rendering wiki/new
+Completed in 747ms (View: 72, DB: 1) | 200 OK [http://localhost/wiki/new/HomePage]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-11 00:48:28) [GET]
+Redirected to http://localhost:2500/wiki/show/HomePage
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/create_system]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2012-07-11 00:48:28) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Redirected to http://localhost:2500/wiki/new/HomePage
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/wiki/show/HomePage]
+
+
+Processing WikiController#new (for 127.0.0.1 at 2012-07-11 00:48:28) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Rendering template within layouts/default
+Rendering wiki/new
+Completed in 125ms (View: 122, DB: 1) | 200 OK [http://localhost/wiki/new/HomePage]
+
+
+Processing WikiController#save (for 127.0.0.1 at 2012-07-11 00:48:47) [POST]
+  Parameters: {"_form_key"=>"947f0c7237617cbc182784fcdb518a859339d027", "web"=>"wiki", "author"=>"Sentul", "id"=>"HomePage", "content"=>"test"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+127.0.0.1
+Maruku took 0.037091 seconds.
+Maruku took 0.000708 seconds.
+Expired fragment: views/wiki/show/HomePage (0.3ms)
+Expired fragment: views/wiki/published/HomePage (0.2ms)
+Expired fragment: views/wiki/s5/HomePage (0.2ms)
+Expired fragment: views/wiki/tex/HomePage (0.2ms)
+Expired fragment: views/wiki/print/HomePage (0.2ms)
+Expired fragment: views/wiki/history/HomePage (0.2ms)
+Expired fragment: views/wiki/source/HomePage (0.2ms)
+Expired fragment: views/wiki/show/diff/HomePage (0.2ms)
+Expired fragment: views/wiki/recently_revised (0.2ms)
+Expired fragment: views/wiki/list (0.2ms)
+Expired fragment: views/wiki/authors (0.2ms)
+Expired fragment: views/wiki/atom_with_content (0.2ms)
+Expired fragment: views/wiki/atom_with_headlines (0.2ms)
+Expired fragment: views/wiki/file_list (0.2ms)
+Expired fragment: views/wiki/file_list/file_name (0.2ms)
+Expired fragment: views/wiki/file_list/created_at (0.2ms)
+Expired fragment: views/wiki/show/HomePage (0.2ms)
+Expired fragment: views/wiki/published/HomePage (0.2ms)
+Expired fragment: views/wiki/s5/HomePage (0.2ms)
+Expired fragment: views/wiki/tex/HomePage (0.2ms)
+Expired fragment: views/wiki/print/HomePage (0.2ms)
+Expired fragment: views/wiki/history/HomePage (0.2ms)
+Expired fragment: views/wiki/source/HomePage (0.2ms)
+Expired fragment: views/wiki/show/diff/HomePage (0.2ms)
+Redirected to http://localhost:2500/wiki/show/HomePage
+Completed in 369ms (DB: 20) | 302 Found [http://localhost/wiki/save/HomePage]
+
+
+Processing WikiController#show (for 127.0.0.1 at 2012-07-11 00:48:47) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage'  found
+Cached fragment hit: views/wiki/show/HomePage (0.2ms)
+Rendering template within layouts/default
+Rendering wiki/page
+Maruku took 0.000649 seconds.
+Maruku took 0.000441 seconds.
+Rendered wiki/_inbound_links (1.8ms)
+Cached fragment miss: localhost:2500/wiki/show/HomePage (2.2ms)
+Completed in 149ms (View: 140, DB: 2) | 200 OK [http://localhost/wiki/show/HomePage]
