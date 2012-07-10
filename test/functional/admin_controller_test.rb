@@ -139,9 +139,9 @@ class AdminControllerTest < ActionController::TestCase
     assert @web.count_pages?
     assert @web.allow_uploads?
     assert_equal 300, @web.max_upload_size
-    assert File.directory? Rails.root.join("webs", "renamed_wiki1", "files")
-    assert !File.exist?(Rails.root.join("webs", "renamed_wiki1", "wiki1"))
-    assert !File.exist?(Rails.root.join("webs", "wiki1"))
+    assert File.directory? Rails.root.join("tmp/webs", "renamed_wiki1", "files")
+    assert !File.exist?(Rails.root.join("tmp/webs", "renamed_wiki1", "wiki1"))
+    assert !File.exist?(Rails.root.join("tmp/webs", "wiki1"))
   end
 
   def test_edit_web_web_password_mismatch
@@ -157,9 +157,9 @@ class AdminControllerTest < ActionController::TestCase
 
     assert_response :success
     assert @response.has_template_object?('error')
-    assert File.directory? Rails.root.join("webs", "wiki1", "files")
-    assert !File.exist?(Rails.root.join("webs", "renamed_wiki1", "wiki1"))
-    assert !File.exist?(Rails.root.join("webs", "renamed_wiki1"))
+    assert File.directory? Rails.root.join("tmp/webs", "wiki1", "files")
+    assert !File.exist?(Rails.root.join("tmp/webs", "renamed_wiki1", "wiki1"))
+    assert !File.exist?(Rails.root.join("tmp/webs", "renamed_wiki1"))
   end
 
   def test_edit_web_opposite_values
@@ -180,9 +180,9 @@ class AdminControllerTest < ActionController::TestCase
     assert !@web.brackets_only?
     assert !@web.count_pages?
     assert !@web.allow_uploads?
-    assert File.directory? Rails.root.join("webs", "renamed_wiki1", "files")
-    assert !File.exist?(Rails.root.join("webs", "renamed_wiki1", "wiki1"))
-    assert !File.exist?(Rails.root.join("webs", "wiki1"))
+    assert File.directory? Rails.root.join("tmp/webs", "renamed_wiki1", "files")
+    assert !File.exist?(Rails.root.join("tmp/webs", "renamed_wiki1", "wiki1"))
+    assert !File.exist?(Rails.root.join("tmp/webs", "wiki1"))
   end
 
   def test_edit_web_wrong_password

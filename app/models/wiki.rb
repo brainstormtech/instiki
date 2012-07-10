@@ -40,7 +40,7 @@ class Wiki
   
   def move_files(old_path, new_path)
     return if new_path == old_path
-    default_path = Rails.root.join("webs", "files")
+    default_path = Rails.root.join("tmp/webs", "files")
     FileUtils.rmdir(new_path) if File.exist?(new_path)
     if [old_path, new_path].include? default_path
       File.rename(old_path, new_path)

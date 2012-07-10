@@ -172,7 +172,7 @@ class Web < ActiveRecord::Base
 
   # @return [Pathname] the path to the files for this record
   def files_path
-    path = Rails.root.join("webs")
+    path = Rails.root.join("tmp/webs")
     if default_web?
       path.join("files")
     else
