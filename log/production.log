@@ -170,3 +170,150 @@ Maruku took 0.000441 seconds.
 Rendered wiki/_inbound_links (1.8ms)
 Cached fragment miss: localhost:2500/wiki/show/HomePage (2.2ms)
 Completed in 149ms (View: 140, DB: 2) | 200 OK [http://localhost/wiki/show/HomePage]
+** Erubis 2.7.0
+** Erubis 2.7.0
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-11 01:08:18) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'webs'):
+  app/models/wiki.rb:97:in `setup?'
+  app/controllers/wiki_controller.rb:21:in `index'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+
+Rendered rescues/_trace (1054.4ms)
+Rendered rescues/_request_and_response (5.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-11 01:09:09) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'webs'):
+  app/models/wiki.rb:97:in `setup?'
+  app/controllers/wiki_controller.rb:21:in `index'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+
+Rendered rescues/_trace (292.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-11 01:10:10) [GET]
+Checking DNSBL 1.0.0.127.sbl-xbl.spamhaus.org
+Checking DNSBL 1.0.0.127.bl.spamcop.net
+127.0.0.1 added to DNSBL passed cache
+
+ActiveRecord::StatementInvalid (Could not find table 'webs'):
+  app/models/wiki.rb:97:in `setup?'
+  app/controllers/admin_controller.rb:8:in `create_system'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+
+Rendered rescues/_trace (1201.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-11 01:11:46) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'webs'):
+  app/models/wiki.rb:97:in `setup?'
+  app/controllers/admin_controller.rb:8:in `create_system'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/Zaid/.rvm/rubies/ruby-1.8.7-p358/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+
+Rendered rescues/_trace (532.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+** Erubis 2.7.0
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-11 01:13:32) [GET]
+Redirected to http://localhost:2500/create_system
+Completed in 145ms (DB: 1) | 302 Found [http://localhost/]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-11 01:13:32) [GET]
+Checking DNSBL 1.0.0.127.bl.spamcop.net
+Checking DNSBL 1.0.0.127.sbl-xbl.spamhaus.org
+127.0.0.1 added to DNSBL passed cache
+Rendering template within layouts/default
+Rendering admin/create_system
+Completed in 1204ms (View: 709, DB: 1) | 200 OK [http://localhost/create_system]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-11 01:14:13) [POST]
+  Parameters: {"password_check"=>"brainhubber", "password"=>"brainhubber", "_form_key"=>"38aaf547097d3f14df08b1843002fa65717f18c8", "web_name"=>"Brainstorm Technologies", "web_address"=>"wiki"}
+Expired fragment: views/wiki/recently_revised (0.7ms)
+Expired fragment: views/wiki/list (1.4ms)
+Expired fragment: views/wiki/authors (0.7ms)
+Expired fragment: views/wiki/atom_with_content (0.7ms)
+Expired fragment: views/wiki/atom_with_headlines (0.7ms)
+Expired fragment: views/wiki/file_list (0.5ms)
+Expired fragment: views/wiki/file_list/file_name (0.4ms)
+Expired fragment: views/wiki/file_list/created_at (0.5ms)
+Expired fragment: views/wiki/recently_revised (0.6ms)
+Expired fragment: views/wiki/list (0.6ms)
+Expired fragment: views/wiki/authors (0.4ms)
+Expired fragment: views/wiki/atom_with_content (0.4ms)
+Expired fragment: views/wiki/atom_with_headlines (0.5ms)
+Expired fragment: views/wiki/file_list (0.4ms)
+Expired fragment: views/wiki/file_list/file_name (18.8ms)
+Expired fragment: views/wiki/file_list/created_at (0.7ms)
+Expired fragment: views/wiki/recently_revised (0.5ms)
+Expired fragment: views/wiki/list (1.3ms)
+Expired fragment: views/wiki/authors (0.5ms)
+Expired fragment: views/wiki/atom_with_content (0.4ms)
+Expired fragment: views/wiki/atom_with_headlines (0.4ms)
+Expired fragment: views/wiki/file_list (0.4ms)
+Expired fragment: views/wiki/file_list/file_name (0.4ms)
+Expired fragment: views/wiki/file_list/created_at (0.4ms)
+Redirected to http://localhost:2500/wiki/new/HomePage
+Completed in 402ms (DB: 7) | 302 Found [http://localhost/create_system]
+
+
+Processing WikiController#new (for 127.0.0.1 at 2012-07-11 01:14:13) [GET]
+  Parameters: {"web"=>"wiki", "id"=>"HomePage"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Rendering template within layouts/default
+Rendering wiki/new
+Completed in 941ms (View: 910, DB: 2) | 200 OK [http://localhost/wiki/new/HomePage]
