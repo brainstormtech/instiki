@@ -3,3 +3,18 @@ Migrating to Beta1Schema (1)
 Migrating to Beta2ChangesBulk (2)
 Migrating to Beta1Schema (1)
 Migrating to Beta2ChangesBulk (2)
+** Erubis 2.7.0
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-10 22:58:27) [GET]
+Redirected to http://localhost:2500/create_system
+Completed in 297ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-10 22:58:27) [GET]
+Checking DNSBL 1.0.0.127.sbl-xbl.spamhaus.org
+Checking DNSBL 1.0.0.127.bl.spamcop.net
+127.0.0.1 added to DNSBL passed cache
+Rendering template within layouts/default
+Rendering admin/create_system
+Completed in 1122ms (View: 134, DB: 0) | 200 OK [http://localhost/create_system]
