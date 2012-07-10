@@ -18,3 +18,57 @@ Checking DNSBL 1.0.0.127.bl.spamcop.net
 Rendering template within layouts/default
 Rendering admin/create_system
 Completed in 1122ms (View: 134, DB: 0) | 200 OK [http://localhost/create_system]
+** Erubis 2.7.0
+
+
+Processing WikiController#index (for 127.0.0.1 at 2012-07-10 23:24:44) [GET]
+Redirected to http://localhost:2500/create_system
+Completed in 21ms (DB: 0) | 302 Found [http://localhost/]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-10 23:24:44) [GET]
+Checking DNSBL 1.0.0.127.sbl-xbl.spamhaus.org
+Checking DNSBL 1.0.0.127.bl.spamcop.net
+127.0.0.1 added to DNSBL passed cache
+Rendering template within layouts/default
+Rendering admin/create_system
+Completed in 1271ms (View: 112, DB: 0) | 200 OK [http://localhost/create_system]
+
+
+Processing AdminController#create_system (for 127.0.0.1 at 2012-07-10 23:25:13) [POST]
+  Parameters: {"_form_key"=>"1c5cad76384f70b5c41a478449f1b72b43bdba28", "web_address"=>"wiki", "web_name"=>"Brainstorm Technologies", "password"=>"brainhubber", "password_check"=>"brainhubber"}
+Expired fragment: views/wiki/recently_revised (0.3ms)
+Expired fragment: views/wiki/list (0.2ms)
+Expired fragment: views/wiki/authors (0.2ms)
+Expired fragment: views/wiki/atom_with_content (0.2ms)
+Expired fragment: views/wiki/atom_with_headlines (0.2ms)
+Expired fragment: views/wiki/file_list (0.2ms)
+Expired fragment: views/wiki/file_list/file_name (0.2ms)
+Expired fragment: views/wiki/file_list/created_at (0.2ms)
+Expired fragment: views/wiki/recently_revised (0.2ms)
+Expired fragment: views/wiki/list (0.2ms)
+Expired fragment: views/wiki/authors (0.2ms)
+Expired fragment: views/wiki/atom_with_content (0.2ms)
+Expired fragment: views/wiki/atom_with_headlines (0.2ms)
+Expired fragment: views/wiki/file_list (0.2ms)
+Expired fragment: views/wiki/file_list/file_name (0.3ms)
+Expired fragment: views/wiki/file_list/created_at (0.2ms)
+Expired fragment: views/wiki/recently_revised (0.2ms)
+Expired fragment: views/wiki/list (0.1ms)
+Expired fragment: views/wiki/authors (0.1ms)
+Expired fragment: views/wiki/atom_with_content (0.1ms)
+Expired fragment: views/wiki/atom_with_headlines (0.2ms)
+Expired fragment: views/wiki/file_list (0.2ms)
+Expired fragment: views/wiki/file_list/file_name (0.1ms)
+Expired fragment: views/wiki/file_list/created_at (0.1ms)
+Redirected to http://localhost:2500/wiki/new/HomePage
+Completed in 98ms (DB: 52) | 302 Found [http://localhost/create_system]
+
+
+Processing WikiController#new (for 127.0.0.1 at 2012-07-10 23:25:13) [GET]
+  Parameters: {"id"=>"HomePage", "web"=>"wiki"}
+Reading page 'HomePage' from web 'wiki'
+Page 'HomePage' not found
+Rendering template within layouts/default
+Rendering wiki/new
+Completed in 165ms (View: 161, DB: 1) | 200 OK [http://localhost/wiki/new/HomePage]
